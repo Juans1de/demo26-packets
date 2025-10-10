@@ -1,9 +1,11 @@
-
-```bash
+<details> 
+<summary> - ISP </summary>
+  
+```tcl
 apt-get update && apt-get install chrony nginx iptables apache2-htpasswd -y
 apt-get reinstall tzdata -y
 ```
-
+</details>
 
 <details> 
 <summary> - HQ-SRV </summary>
@@ -16,6 +18,7 @@ apt-get update && apt-get install -y apache2 php8.2 apache2-mod_php8.2 mariadb-s
 
 <details> 
 <summary> - HQ-CLI </summary>
+  
 ```tcl
 apt-get update && apt-get install admc chrony nfs-clients sudo libsss_sudo yandex-browser -y
 ```
@@ -23,6 +26,7 @@ apt-get update && apt-get install admc chrony nfs-clients sudo libsss_sudo yande
 
 <details> 
 <summary> - BR-SRV </summary>
+  
 ```tcl
 apt-get update && apt-get install chrony ansible task-samba-dc docker-engine docker-compose -y
 apt-repo add rpm http://altrepo.ru/local-p10 noarch local-p10
