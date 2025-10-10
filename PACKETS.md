@@ -7,6 +7,7 @@ apt-get reinstall tzdata -y
 
 <details> 
 <summary> - HQ-SRV </summary>
+  
 ```tcl
 apt-get update && apt-get install chrony dnsmasq fdisk nfs-server -y
 apt-get update && apt-get install -y apache2 php8.2 apache2-mod_php8.2 mariadb-server php8.2-{opcache,curl,gd,intl,mysqli,xml,xmlrpc,ldap,zip,soap,mbstring,json,xmlreader,fileinfo,sodium}
