@@ -1,9 +1,9 @@
 <details>
 <summary> - ISP </summary>
-
+```bash
 apt-get update && apt-get install chrony nginx iptables apache2-htpasswd -y
 apt-get reinstall tzdata -y
-
+```
 </details>
 
 <details> 
