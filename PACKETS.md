@@ -67,16 +67,18 @@ EOF
 <summary> - ISP </summary>
 
 </details>
-2
+
+```bash
 ISP
 apt-get update && apt-get install chrony nginx iptables apache2-htpasswd -y
 apt-get reinstall tzdata -y
 iptables -t nat -A POSTROUTING -o ens20 -s 0/0 -j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
+```
 
-
-HQ-SRV
+<summary> - HQ-SRV </summary>
+```bash
 apt-get update && apt-get install chrony nginx iptables apache2-htpasswd -y
 apt-get reinstall tzdata -y
 
@@ -86,5 +88,6 @@ apt-get reinstall tzdata -y
 
 BR-SRV
 apt-get update && apt-get install chrony ansible task-samba-dc docker-engine docker-compose -y
+```
 
 </details>
