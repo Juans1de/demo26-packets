@@ -79,17 +79,29 @@ systemctl enable --now iptables
 
 </details>
 
+<details>
 <summary> - HQ-SRV </summary>
+
 ```bash
 apt-get update && apt-get install chrony nginx iptables apache2-htpasswd -y
 apt-get reinstall tzdata -y
+```
 
+</details>
 
-HQ-CLI
+<details>
+<summary> - HQ-CLI </summary>
+
+```bash  
 apt-get update && apt-get install chrony nginx iptables apache2-htpasswd -y
 apt-get reinstall tzdata -y
+```
+</details>
 
-BR-SRV
+<details>
+<summary> - BR-SRV </summary>
+
+```bash
 apt-get update && apt-get install chrony ansible task-samba-dc docker-engine docker-compose -y
 ```
 
