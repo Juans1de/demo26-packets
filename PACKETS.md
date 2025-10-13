@@ -1,3 +1,4 @@
+# Пакеты нужные дял Демо 26
 <details> 
 <summary> - ISP </summary>
   
@@ -34,7 +35,7 @@ apt-get update && apt-get install sudo-samba-schema -y
 ```
 </details>
 
-# Действие №1 - Замена репазитория
+# Действие №1 - Замена репозитория
 <details>
 <summary> - ISP </summary>
 
