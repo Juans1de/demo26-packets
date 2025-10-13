@@ -47,6 +47,8 @@ rpm [p11] http://192.168.0.91/mirror p11/branch/noarch classic
 rpm [p11] http://192.168.0.91/mirror p11/branch/x86_64-i586 classic
 EOF
 ```
+</details>
+
 <details> 
 <summary> - CLI & SRV'S </summary>
 
@@ -66,8 +68,6 @@ EOF
 <details> 
 <summary> - ISP </summary>
 
-</details>
-
 ```bash
 ISP
 apt-get update && apt-get install chrony nginx iptables apache2-htpasswd -y
@@ -77,10 +77,13 @@ iptables-save > /etc/sysconfig/iptables
 systemctl enable --now iptables
 ```
 
+</details>
+
 <summary> - HQ-SRV </summary>
 ```bash
 apt-get update && apt-get install chrony nginx iptables apache2-htpasswd -y
 apt-get reinstall tzdata -y
+
 
 HQ-CLI
 apt-get update && apt-get install chrony nginx iptables apache2-htpasswd -y
