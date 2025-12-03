@@ -70,7 +70,6 @@ EOF
 <summary> - ISP </summary>
 
 ```bash
-ISP
 apt-get update && apt-get install chrony nginx iptables apache2-htpasswd -y
 apt-get reinstall tzdata -y
 iptables -t nat -A POSTROUTING -o ens20 -s 0/0 -j MASQUERADE
